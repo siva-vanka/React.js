@@ -1,9 +1,9 @@
 .defaultStyle{
-    color:"black";
+    color:black;
     Text-decoration:"none"
 }
 
 .activeStyle{
-   color:"blue";
+   color:blue;
    Text-decoration:"none"
 }
