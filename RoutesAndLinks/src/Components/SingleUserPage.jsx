@@ -21,7 +21,7 @@ const SingleUserPage = () => {
   
     useEffect(() => {
       fetchingData(params);
-    }, []);
+    }, [params.id]);
   return (
     <div>
 
