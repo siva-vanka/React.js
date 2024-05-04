@@ -1,0 +1,9 @@
+.defaultStyle{
+    color:"black";
+    Text-decoration:"none"
+}
+
+.activeStyle{
+   color:"blue";
+   Text-decoration:"none"
+}
