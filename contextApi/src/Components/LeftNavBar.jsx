@@ -1,6 +1,6 @@
 import React from 'react'
 
- export const LeftNavbar = () => {
+const LeftNavbar = () => {
   return (
     <div>LeftNavbar</div>
   )

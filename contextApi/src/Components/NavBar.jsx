@@ -1,12 +1,9 @@
 import React, { useContext } from 'react'
-import LeftNavBar from './LeftNavBar'
-import RightNavBar from './RightNavBar'
-import { AppContext } from "../context/AppContextProvider"
-
-
-
+import LeftNavbar from './LeftNavbar'
+import RightNavbar from './RightNavbar'
+import { AppContext } from '../context/AppContextProvider'
  
-export const Navbar = () => {
+const Navbar = () => {
     const {isAuth, login, logout} = useContext(AppContext)
   return (
     <div style={{display:"flex", justifyContent:"space-between", gap:"10px"}}>
