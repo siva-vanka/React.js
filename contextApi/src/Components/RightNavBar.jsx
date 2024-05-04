@@ -7,7 +7,7 @@ import { AppContext } from '../context/AppContextProvider';
 
 
 
-const RightNavbar = () => {
+ export const RightNavbar = () => {
    const val= useContext(AppContext);
    console.log(val);
   return (
