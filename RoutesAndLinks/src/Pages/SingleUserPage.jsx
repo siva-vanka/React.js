@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 
 
-const SingleUserPage = () => {
+ const SingleUserPage = () => {
     
     
     const [data, setData] = useState([]);

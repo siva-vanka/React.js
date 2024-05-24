@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import Styles from "./NavBar.module.css";
+import { useContext } from "react";
+import { AuthContext } from "../Context/AuthContextProvider";
 const links = [
   {
     path: "/",
@@ -24,6 +26,8 @@ const links = [
 ];
 
 const NavBar = () => {
+
+ const {isAuth,logout}= useContext(AuthContext)
   return (
     <div style={{ display: "flex", gap: "10px" }}>
       {/* <Link to="/">Home</Link>
@@ -35,9 +39,7 @@ const NavBar = () => {
           <NavLink
             to={link.path}
             key={link.path}
-        //     // style={({ isActive }) => {
-        //     //   return isActive ? activeStyle : defaultStyle;
-        // }}
+  
 
             className={({isActive})=>{
 
@@ -51,6 +53,8 @@ const NavBar = () => {
           </NavLink>
         );
       })}
+      <p>User Logged IN :{isAuth ? "YES" : "NO"} </p>
+      {isAuth && <button onClick={logout}>logout</button>}
     </div>
   );
 };
