@@ -14,6 +14,7 @@ const Pin = ({ length, maxLength }) => {
     if (index < length - 1) {
       inputRef.current[index + 1].focus();
       //inputRef.current[index-1].focus();
+    //   
     }
 }
 
